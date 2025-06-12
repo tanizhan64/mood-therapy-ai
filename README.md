@@ -1,4 +1,4 @@
-# 🌈 AI Mood Therapy & Healing System
+#  AI Mood Therapy & Healing System
 
 > A personalized AI companion that helps users reflect, heal, and calm down by detecting mood from text and offering calming music, motivational quotes, and breathing exercises.
 
