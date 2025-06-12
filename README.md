@@ -34,7 +34,20 @@
 
 ---
 
+## 🙏 Credits
+- Hugging Face: Emotion Detection
+- YouTube: Calming Music
+- Streamlit: App UI
+
+---
+
+## 👤 Author
+**tanizhan**  
+GitHub: [@tanizhan64](https://github.com/tanizhan64)  
+Location: Tamil Nadu, India  
 ## 🚀 How to Run Locally
+
+---
 
 ```bash
 git clone https://github.com/tanizhan64/mood-therapy-ai.git
