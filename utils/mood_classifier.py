@@ -1,15 +1,17 @@
 from transformers import pipeline
 
-# Load pre-trained emotion classification pipeline
+# Load Hugging Face model
 model_name = "j-hartmann/emotion-english-distilroberta-base"
-
-# Create a pipeline object for emotion classification
-emotion_pipeline = pipeline("text-classification", model=model_name, tokenizer=model_name, return_all_scores=False)
+emotion_pipeline = pipeline("text-classification", model=model_name, tokenizer=model_name)
 
 def detect_mood(text):
     """
-    Returns the top predicted emotion for the given input text.
+    Detect mood and confidence score from input text.
+    Returns:
+        mood (str), score (float)
     """
     result = emotion_pipeline(text)
-    top_emotion = result[0]['label']
-    return top_emotion.lower()
+    top_result = result[0]
+    mood = top_result['label'].lower()
+    score = round(top_result['score'], 2)
+    return mood, score
