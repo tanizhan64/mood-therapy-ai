@@ -45,7 +45,7 @@
 **tanizhan**  
 -GitHub: [@tanizhan64](https://github.com/tanizhan64) 
 
--Hugging Face: [Hugging Face](https://huggingface.co/tanizhan)
+-Hugging Face: [@tanizhan](https://huggingface.co/tanizhan)
 
 
 ---
