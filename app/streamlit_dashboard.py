@@ -1,14 +1,15 @@
-# streamlit_dashboard.py
-import pandas as pd
 import streamlit as st
+import pandas as pd
 import altair as alt
+import os
 
-st.set_page_config(page_title="Mood Tracker", layout="wide")
+st.set_page_config(page_title="Mood Tracker Dashboard", layout="wide")
+st.title("📊 Mood Tracker Dashboard")
+st.markdown("Monitor how your emotions change over time.")
 
-st.title("📊 Mood Tracker Dashboard – AI Healing Companion")
-
-# Load the log
 log_file = "data/mood_log.csv"
+
+# 📊 Load the mood log CSV
 if os.path.exists(log_file):
     df = pd.read_csv(log_file)
     df['timestamp'] = pd.to_datetime(df['timestamp'])
@@ -22,12 +23,12 @@ if os.path.exists(log_file):
         y='count:Q',
         color='emotion:N',
         tooltip=['date:T', 'emotion:N', 'count:Q']
-    ).interactive()
+    ).properties(width=800, height=400)
 
     st.altair_chart(chart, use_container_width=True)
 
     st.subheader("📝 Recent Mood Entries")
-    st.dataframe(df.tail(10).sort_values(by="timestamp", ascending=False))
-else:
-    st.warning("No mood logs found. Use the mood detector app first.")
+    st.dataframe(df.sort_values(by="timestamp", ascending=False).tail(10))
 
+else:
+    st.warning("⚠️ No mood log data found. Use the Mood Therapy app to submit entries first.")
