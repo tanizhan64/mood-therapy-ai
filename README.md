@@ -1,40 +1,43 @@
+# 🌈 AI Mood Therapy & Healing System
 
-# AI Mood Therapy & Healing System
+> A personalized AI companion that helps users reflect, heal, and calm down by detecting mood from text and offering calming music, motivational quotes, and breathing exercises.
 
-> Calm your mind, track your emotions, and find daily healing through AI. 
-
-[![Streamlit](https://img.shields.io/badge/Live-Demo-green?logo=streamlit)]([https://mood-therapy-ai-udsslzbcfq6vqs.streamlit.app](https://mood-therapy-ai-udsslzhcdqf6qys3zg6ect.streamlit.app/)/)
+[![Streamlit](https://img.shields.io/badge/Live-Demo-green?logo=streamlit)](https://mood-therapy-ai-udsslzhcdqf6qys3zg6ect.streamlit.app/)
 
 ---
 
 ## 🖼️ Preview
 
-![App Screenshot](screenshot.png)
+![App Screenshot](screenshot.png)  
+
 
 ---
 
 ## 💡 Features
-- NLP-based Mood Detection
-- Healing Quotes + Music
-- Guided Breathing
-- Mood Tracking Dashboard
+
+- 🧠 **NLP Mood Detection** using Hugging Face emotion model  
+- 💬 **Personalized Calming Quotes** based on emotional state  
+- 🎵 **Healing Music Recommender** from public YouTube links  
+- 🧘 **Breathing Exercise UI** with 4-4-4 cycle  
+- 📊 **Mood Trend Dashboard** using Streamlit + Altair  
+- 📁 **Mood Log CSV** to track emotional history over time
 
 ---
 
 ## 🛠️ Tech Stack
-Streamlit, Hugging Face Transformers, Altair, Python
+
+- Python  
+- Streamlit  
+- Hugging Face Transformers  
+- Altair  
+- Pandas  
 
 ---
 
-## 🙏 Credits
-- Hugging Face: Emotion Detection
-- YouTube: Calming Music
-- Streamlit: App UI
+## 🚀 How to Run Locally
 
----
-
-## 👤 Author
-**Vignesh S**  
-GitHub: [@tanizhan64](https://github.com/tanizhan64)  
-Location: Tamil Nadu, India  
-
+```bash
+git clone https://github.com/tanizhan64/mood-therapy-ai.git
+cd mood-therapy-ai
+pip install -r requirements.txt
+streamlit run streamlit_app.py
