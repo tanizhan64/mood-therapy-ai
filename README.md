@@ -43,11 +43,13 @@
 
 ## 👤 Author
 **tanizhan**  
-GitHub: [@tanizhan64](https://github.com/tanizhan64)  
+GitHub: [@tanizhan64](https://github.com/tanizhan64) 
+Hugging Face: [Hugging Face](https://huggingface.co/tanizhan)
 Location: Tamil Nadu, India  
-## 🚀 How to Run Locally
 
 ---
+
+## 🚀 How to Run Locally
 
 ```bash
 git clone https://github.com/tanizhan64/mood-therapy-ai.git
