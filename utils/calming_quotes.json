@@ -1,26 +1,32 @@
 {
   "joy": [
     "Keep shining, your happiness is contagious!",
-    "Breathe in joy. Breathe out peace."
+    "Breathe in joy. Breathe out peace.",
+    "Celebrate your light today."
   ],
   "sadness": [
     "It’s okay to feel down. This too shall pass.",
-    "You are stronger than your sadness."
+    "You are stronger than your sadness.",
+    "Feel it, then gently let it go."
   ],
   "anger": [
     "Take a deep breath. You control the fire inside.",
-    "Let go of anger — it doesn’t serve your calm."
+    "Let go of anger — it doesn’t serve your calm.",
+    "Peace is always stronger than rage."
   ],
   "fear": [
     "Fear is temporary. Your strength is forever.",
-    "Even the darkest night ends with sunrise."
+    "Even the darkest night ends with sunrise.",
+    "You’ve made it through everything before — you will again."
   ],
   "love": [
     "Love begins with self-kindness.",
-    "Let your heart stay open and soft."
+    "Let your heart stay open and soft.",
+    "Be love. Give love. Receive love."
   ],
   "surprise": [
     "Every surprise brings new light.",
-    "Stay curious — the best is yet to come."
+    "Stay curious — the best is yet to come.",
+    "Life unfolds in beautiful ways."
   ]
 }
