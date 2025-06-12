@@ -39,13 +39,13 @@ def log_mood(text, mood, quote, music_link):
 
 # 🌐 Streamlit UI
 st.set_page_config(page_title="AI Mood Therapy", layout="centered")
-st.title("🌈 AI Mood Therapy & Healing System")
+st.title("AI Mood Therapy & Healing System")
 
 user_input = st.text_input("🧠 How do you feel today?")
 
 if st.button("🎯 Analyze My Mood"):
     if not user_input.strip():
-        st.warning("Please enter a message or sentence to analyze.")
+        st.warning("Please enter a message.")
         st.stop()
 
     mood, score = detect_mood(user_input)
