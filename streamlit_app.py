@@ -13,12 +13,12 @@ from utils.calming_quotes import get_quote
 
 # 🎵 Mood-based music links
 mood_music_links = {
-    "joy": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
-    "sadness": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
-    "anger": "https://www.youtube.com/watch?v=lTRiuFIWV54",
-    "fear": "https://www.youtube.com/watch?v=b49UInx0mNw",
-    "love": "https://www.youtube.com/watch?v=450p7goxZqg",
-    "surprise": "https://www.youtube.com/watch?v=cBNqZKWj5e8"
+    "joy": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",  # Happy pop
+    "sadness": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",  # Calming piano
+    "anger": "https://youtu.be/1ZYbU82GVz4?si=Yz3EYfxRQwfLvqlE",  # Peaceful nature sounds
+    "fear": "https://youtu.be/b5BNUa_op2o?si=0QooEoGszHb-w3oe",  # Deep relaxation music
+    "love": "https://youtu.be/kffacxfA7G4?si=5-sJO8JbKX2Vq97L",  # Love melody
+    "surprise": "https://youtu.be/QkjFtDZz4Xs?si=cfEr1oOBUu0LDr0s"  # Light mood lo-fi
 }
 
 # 📝 Mood log saver
