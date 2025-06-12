@@ -43,9 +43,10 @@
 
 ## 👤 Author
 **tanizhan**  
-GitHub: [@tanizhan64](https://github.com/tanizhan64) 
-Hugging Face: [Hugging Face](https://huggingface.co/tanizhan)
-Location: Tamil Nadu, India  
+-GitHub: [@tanizhan64](https://github.com/tanizhan64) 
+
+-Hugging Face: [Hugging Face](https://huggingface.co/tanizhan)
+
 
 ---
 
