@@ -1,39 +1,40 @@
-# AI Mood Therapy & Healing
 
-> A personalized, calming AI companion that detects your mood and delivers healing quotes, emotion-matched music, breathing exercises, and an emotional health dashboard — built for everyone.
+# AI Mood Therapy & Healing System
+
+> Calm your mind, track your emotions, and find daily healing through AI. 
+
+[![Streamlit](https://img.shields.io/badge/Live-Demo-green?logo=streamlit)]([https://mood-therapy-ai-udsslzbcfq6vqs.streamlit.app](https://mood-therapy-ai-udsslzhcdqf6qys3zg6ect.streamlit.app/)/)
 
 ---
 
-## 🧠 Features
+## 🖼️ Preview
 
-- 🎯 **Mood Detection**: Uses NLP (Hugging Face Transformers) to detect user emotion from text
-- 💬 **Calming Quote Generator**: Personalized motivational quote based on your emotion
-- 🎵 **Music Recommender**: YouTube/Spotify links for emotion-matched music therapy
-- 🧘‍♂️ **Guided Breathing UI**: Visual 4-4-4 breathing cycle to reduce stress
-- 📊 **Mood Tracker**: Stores daily entries and visualizes emotion trends over time
-- 🧾 **CSV Logging**: All mood sessions are saved for emotional history tracking
+![App Screenshot](screenshot.png)
+
+---
+
+## 💡 Features
+- NLP-based Mood Detection
+- Healing Quotes + Music
+- Guided Breathing
+- Mood Tracking Dashboard
 
 ---
 
 ## 🛠️ Tech Stack
-
-- Python · Streamlit · Gradio · Hugging Face Transformers  
-- Pandas · Altair · YouTube Links · Optional: MusicGen, DALL·E, GPT-4
+Streamlit, Hugging Face Transformers, Altair, Python
 
 ---
 
-## 📁 Folder Structure
+## 🙏 Credits
+- Hugging Face: Emotion Detection
+- YouTube: Calming Music
+- Streamlit: App UI
 
-mood-therapy-ai/
-├── app/
-│ ├── streamlit_app.py # Full interactive app
-│ └── streamlit_dashboard.py # Mood tracking visualization
-├── data/
-│ └── mood_log.csv # Stored mood sessions
-├── assets/
-│ └── calm_music.mp3 # Background music (optional)
-├── utils/
-│ ├── mood_classifier.py # Emotion detection pipeline
-│ └── calming_quotes.json # Quotes by mood
-├── requirements.txt
-└── README.md
+---
+
+## 👤 Author
+**Vignesh S**  
+GitHub: [@tanizhan64](https://github.com/tanizhan64)  
+Location: Tamil Nadu, India  
+
