@@ -16,10 +16,11 @@ mood_music_links = {
     "surprise": "https://youtu.be/QkjFtDZz4Xs?si=cfEr1oOBUu0LDr0s"  # Light mood lo-fi
 }
 
-# 📝 Save mood entry to CSV
+
+# 📦 Save mood log
 def log_mood(text, mood, quote, music_link):
-    log_path = "data/mood_log.csv"
     os.makedirs("data", exist_ok=True)
+    path = "data/mood_log.csv"
     df = pd.DataFrame([{
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "input": text,
@@ -27,29 +28,33 @@ def log_mood(text, mood, quote, music_link):
         "quote": quote,
         "music": music_link
     }])
-    if os.path.exists(log_path):
-        df.to_csv(log_path, mode='a', header=False, index=False)
+    if os.path.exists(path):
+        df.to_csv(path, mode='a', header=False, index=False)
     else:
-        df.to_csv(log_path, index=False)
+        df.to_csv(path, index=False)
 
-# 🌐 Streamlit App UI
+# 🌐 Streamlit UI
 st.set_page_config(page_title="AI Mood Therapy", layout="centered")
 st.title("🌈 AI Mood Therapy & Healing System")
 
 user_input = st.text_input("🧠 How do you feel today?")
 
 if st.button("🎯 Analyze My Mood"):
-    if user_input:
-        mood = detect_mood(user_input)
-        quote = get_quote(mood)
-        music_link = mood_music_links.get(mood, "https://www.youtube.com/watch?v=1ZYbU82GVz4")
-        log_mood(user_input, mood, quote, music_link)
+    if not user_input.strip():
+        st.warning("Please enter a sentence or emotion.")
+        st.stop()
 
-        st.success(f"🧠 Detected Mood: **{mood.capitalize()}**")
-        st.markdown(f"💬 *{quote}*")
-        st.markdown(f"[🎵 Click to Play Healing Music]({music_link})")
+    mood, score = detect_mood(user_input)
+    quote = get_quote(mood)
+    music_link = mood_music_links.get(mood, "https://www.youtube.com/watch?v=1ZYbU82GVz4")
 
-# 🧘‍♂️ Breathing Session
+    log_mood(user_input, mood, quote, music_link)
+
+    st.success(f"🧠 Detected Mood: **{mood.capitalize()}** (Confidence: {score})")
+    st.markdown(f"💬 *{quote}*")
+    st.video(music_link)
+
+# 🧘 Breathing Exercise
 if st.button("🧘 Start Breathing Session"):
     st.subheader("✨ Calm Breathing: Inhale → Hold → Exhale")
     placeholder = st.empty()
@@ -60,4 +65,4 @@ if st.button("🧘 Start Breathing Session"):
         time.sleep(4)
         placeholder.markdown("### 😮‍💨 Exhale…")
         time.sleep(4)
-    placeholder.markdown("✅ Well done! You're calm and centered 🌸")
+    placeholder.markdown("✅ You're calm now. Breathe easy 🌸")
